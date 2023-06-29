@@ -4,11 +4,11 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import r2wc from "@r2wc/react-to-web-component";
-import { Feedback } from "./components/Feedback/Feedback";
+import { Counter } from "./components/Counter/Counter";
 
-const feedback = r2wc(Feedback);
+const CounterComp = r2wc(Counter);
 
-customElements.define("r2w-feedback", feedback);
+customElements.define("r2w-counter", CounterComp);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -1,0 +1,12 @@
+.counter {
+  background-color: cornflowerblue;
+  padding: 10px;
+  width: 100px;
+  margin: 0 auto;
+  color: white;
+  cursor: pointer;
+}
+
+.counter span {
+  font-weight: bolder;
+}

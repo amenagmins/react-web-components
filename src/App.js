@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <r2w-feedback />
+      <r2w-counter />
     </div>
   );
 }
