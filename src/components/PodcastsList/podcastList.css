@@ -1,0 +1,106 @@
+.podcasts__section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 -22.5px;
+}
+
+.podcasts__filter-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.podcasts__top-number {
+  color: white;
+  background-color: #2e72d7;
+  width: 50px;
+  height: 28px;
+  font-size: larger;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.podcasts__filter {
+  width: 290px;
+  margin-left: 10px;
+}
+
+.podcasts__container {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: calc(calc(100% / 4) - 45px);
+  align-items: center;
+  position: relative;
+  margin-top: 120px;
+  margin-left: 22.5px;
+  margin-right: 22.5px;
+}
+
+.podcasts__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(189, 189, 189, 1);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(189, 189, 189, 1);
+  box-shadow: 0px 0px 5px 1px rgba(189, 189, 189, 1);
+  border-radius: 2px;
+  padding: 18px;
+  padding-top: 88px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.podcasts__img {
+  height: auto;
+  width: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: -60px;
+}
+
+.podcasts__title {
+  text-transform: uppercase;
+}
+
+.podcasts__author {
+  color: gray;
+  text-align: center;
+  margin-top: 9px;
+}
+
+.podcasts__no-results {
+  text-align: center;
+  width: 100%;
+  margin-top: 45px;
+}
+
+@media only screen and (max-width: 992px) {
+  .podcasts__container {
+    width: calc(calc(100% / 3) - 45px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .podcasts__container {
+    width: calc(calc(100% / 2) - 45px);
+  }
+  .podcasts__filter-section {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .podcasts__container {
+    width: calc(calc(100% / 1) - 45px);
+  }
+  .podcasts__filter-section {
+    justify-content: center;
+  }
+}

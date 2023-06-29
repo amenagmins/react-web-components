@@ -5,10 +5,12 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import r2wc from "@r2wc/react-to-web-component";
 import { Counter } from "./components/Counter/Counter";
+import { PodcastsList } from "./components/PodcastsList/PodcastsList";
 
 const CounterComp = r2wc(Counter);
-
 customElements.define("r2w-counter", CounterComp);
+const PodcastsListComp = r2wc(PodcastsList);
+customElements.define("r2w-podcasts-list", PodcastsListComp);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
