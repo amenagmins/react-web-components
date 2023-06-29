@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@r2wc/react-to-web-component": "^2.0.2",
     "gh-pages": "^5.0.0"
   }
 }

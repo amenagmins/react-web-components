@@ -1,10 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import r2wc from "@r2wc/react-to-web-component";
+import { Feedback } from "./components/Feedback/Feedback";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const feedback = r2wc(Feedback);
+
+customElements.define("r2w-feedback", feedback);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
