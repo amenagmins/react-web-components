@@ -36,3 +36,48 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  word-break: break-word;
+}
+
+.App {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 15px;
+  min-width: 350px;
+}
+
+.App main {
+  margin: 90px 0;
+}
+
+input[type="text"] {
+  padding: 11px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.error-msg {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.error-msg button {
+  width: fit-content;
+  margin-top: 12.5px;
+  background-color: #2e72d7;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  padding: 8px;
+  text-decoration: none;
+}
