@@ -8,21 +8,11 @@ export class CECounter extends HTMLElement {
     this.attachShadow({ mode: "open" }).appendChild(this.host);
   }
 
-  static getObservedAttributes() {
-    return ["funcTest"];
-  }
-
-  attributeChangedCallback(name, oldValue, newValue) {
-    console.log("name, oldValue, newValue", name, oldValue, newValue);
-  }
-
   connectedCallback() {
+    const objectTestString = this.getAttribute("objectTest");
+    const objectTest = JSON.parse(objectTestString);
     const Component = () => {
       const [cont, setCont] = useState(0);
-      const name = this.getAttribute("name");
-      const objectTestString = this.getAttribute("objectTest");
-      const objectTest = JSON.parse(objectTestString);
-      const funcTest = this.getAttribute("funcTest");
 
       useEffect(() => {
         if (cont === 5) setCont(0);
@@ -33,7 +23,6 @@ export class CECounter extends HTMLElement {
           className="counter"
           onClick={() => {
             setCont(cont + 1);
-            funcTest();
           }}
         >
           {objectTest.name} <span>{cont}</span>

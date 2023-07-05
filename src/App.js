@@ -1,4 +1,5 @@
 import "./App.css";
+import { CECounter } from "./components/XSearch/XSearch";
 
 function App() {
   function myFunc() {
@@ -10,7 +11,7 @@ function App() {
         <ce-counter
           name="contador"
           objectTest='{"name":"contador"}'
-          funcTest={myFunc}
+          funct-test={myFunc}
         ></ce-counter>
       </main>
     </div>
